@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Southern Rhodesian Continuity State - Wiki</title>
     <style>
-        /* Existing styles */
         body {
             font-family: sans-serif;
             line-height: 1.6;
@@ -48,6 +47,10 @@
             border-bottom: 1px solid #dcdcdc;
             padding-bottom: 5px;
         }
+        h3 {
+            font-size: 1.3em;
+            color: #333;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -80,7 +83,6 @@
             margin: 10px auto;
             max-width: 80%;
             height: auto;
-            cursor: pointer;
         }
         footer {
             font-size: 0.9em;
@@ -90,43 +92,32 @@
             border-top: 1px solid #dcdcdc;
             margin-top: 20px;
         }
-
-        /* Modal styles */
-        .modal {
+        .map-container {
+            position: relative;
+            cursor: pointer;
+        }
+        .map-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .map-overlay {
             display: none;
             position: fixed;
-            z-index: 1000;
-            left: 0;
             top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            overflow: auto;
             background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
-        .modal-content {
-            margin: 10% auto;
-            display: block;
+        .map-overlay img {
             max-width: 90%;
             max-height: 90%;
         }
-        .modal-content img {
-            width: 100%;
-            height: auto;
-        }
-        .close {
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            color: #fff;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover,
-        .close:focus {
-            color: #aaa;
-            text-decoration: none;
-            cursor: pointer;
+        .map-overlay:target {
+            display: flex;
         }
     </style>
 </head>
@@ -181,49 +172,49 @@
         </tr>
         <tr>
             <td colspan="2">
-                <img src="map.png" alt="Map of SRCS" id="mapImage">
+                <div class="map-container">
+                    <a href="#map-overlay">
+                        <img src="map.png" alt="Map of SRCS">
+                    </a>
+                </div>
+                <div id="map-overlay" class="map-overlay">
+                    <a href="#" title="Close">
+                        <img src="map.png" alt="Large Map of SRCS">
+                    </a>
+                </div>
             </td>
         </tr>
     </table>
 
-    <!-- Sections -->
     <section id="formation">
         <h2>Formation of the Southern Rhodesian Continuity State</h2>
         <p>The Southern Rhodesian Continuity State (SRCS) was established in 1980 by a faction of Rhodesians who migrated southward following the creation of the Republic of Zimbabwe. Led by Jonathan Hesketh, the group of approximately 34,000 settlers formed a state rooted in principles of self-reliance, nationalism, and military discipline.</p>
     </section>
-</main>
 
-<!-- Modal for Enlarged Map -->
-<div id="mapModal" class="modal">
-    <span class="close" id="closeModal">&times;</span>
-    <div class="modal-content">
-        <img src="map.png" alt="Enlarged Map of SRCS">
-    </div>
-</div>
+    <section id="early-trials">
+        <h2>Early Trials and the Masari Conflict</h2>
+        <p>The SRCS faced significant hardships during its early years, including food shortages and militant incursions. The Great Masari Conflict (1984-1991) was a pivotal struggle in which the SRCS defended its sovereignty against Zimbabwe-backed militants. Covert support from Gibraltar, including arms and financial aid, proved essential to the state's survival.</p>
+    </section>
+
+    <section id="growth">
+        <h2>Stabilization and Growth</h2>
+        <p>By the 1990s, the SRCS transitioned from survival to growth. Land reforms, grassroots economic programs, and alliances with Gibraltar and other trade partners helped stabilize the nation. Women played a prominent role in economic recovery, leading small enterprises and community initiatives.</p>
+    </section>
+
+    <section id="renaissance">
+        <h2>The Renaissance Era</h2>
+        <p>The 2000s marked a renaissance for the SRCS. Public health initiatives eradicated major diseases, and educational institutions became centers of excellence. The integration of maritime trade hubs further propelled economic progress.</p>
+    </section>
+
+    <section id="legacy">
+        <h2>Legacy</h2>
+        <p>The Southern Rhodesian Continuity State stands as a testament to resilience and ingenuity, overcoming immense challenges to build a sustainable and thriving society.</p>
+    </section>
+</main>
 
 <footer>
     <p>&copy; 2024 Southern Rhodesian Continuity State Wiki | All rights reserved</p>
 </footer>
-
-<script>
-    const mapImage = document.getElementById('mapImage');
-    const mapModal = document.getElementById('mapModal');
-    const closeModal = document.getElementById('closeModal');
-
-    mapImage.onclick = () => {
-        mapModal.style.display = 'block';
-    };
-
-    closeModal.onclick = () => {
-        mapModal.style.display = 'none';
-    };
-
-    window.onclick = (event) => {
-        if (event.target === mapModal) {
-            mapModal.style.display = 'none';
-        }
-    };
-</script>
 
 </body>
 </html>
