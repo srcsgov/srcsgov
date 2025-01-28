@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governance of Fairchuck</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            position: relative;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #000;
+            margin: 40px auto;
+        }
+
+        .leader {
+            margin: 20px auto;
+        }
+
+        .leader img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .leader .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .leader .rank {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px auto;
+        }
+
+        .photo-grid .photo {
+            text-align: center;
+            width: 300px;
+        }
+
+        .photo-grid img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .photo-grid .name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .photo-grid .rank {
+            font-size: 14px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .photo-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="emblem.png" alt="Qarqana Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="national.html">National</a>
+            <a href="regional.html">History</a>
+            <a href="international.html">International</a>
+            <a href="departments.html">News</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </header>
+
+    <div class="leader">
+        <img src="first.png" alt="Leader">
+        <div class="name">Alphonse Mangilap</div>
+        <div class="rank">General Commissioner</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="photo-grid">
+        <div class="photo">
+            <img src="photo2.png" alt="Member 1">
+            <div class="name">Leona Tukunang</div>
+            <div class="rank">Chancellor-General</div>
+        </div>
+        <div class="photo">
+            <img src="photo3.png" alt="Member 2">
+            <div class="name">Faima Leclerc</div>
+            <div class="rank">Legislative President</div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="photo-grid">
+        <div class="photo">
+            <img src="photo4.png" alt="Member 3">
+            <div class="name">Marcelo Tenipan</div>
+            <div class="rank">Vice Chancellor-General</div>
+        </div>
+        <div class="photo">
+            <img src="photo5.png" alt="Member 4">
+            <div class="name">Tevaï Kalep</div>
+            <div class="rank">Minister of Defense and Security</div>
+        </div>
+        <div class="photo">
+            <img src="photo6.png" alt="Member 5">
+            <div class="name">Henri Fanoang</div>
+            <div class="rank">Speaker of the National Assembly</div>
+        </div>
+    </div>
+
+    <div class="photo-grid">
+        <div class="photo">
+            <img src="photo7.png" alt="Member 6">
+            <div class="name">George Leprennec</div>
+            <div class="rank">Chairperson of the Strategic Council for International Administration</div>
+        </div>
+        <div class="photo">
+            <img src="photo8.png" alt="Member 7">
+            <div class="name">Jules Tenewach</div>
+            <div class="rank">Chief Justice of the Supreme Tribunal</div>
+        </div>
+        <div class="photo">
+            <img src="photo9.png" alt="Member 8">
+            <div class="name">Léopold Anuk</div>
+            <div class="rank">President of the Maritime Arbitration Court</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <img src="emblem.png" alt="Mini Logo">Sovereign Maritime Protectorate of Fairchuck | PO Box 45678 | Phone: +691-330-1234 | Fax: +691-330-5678 | Location: Weno, Fairchuck.
+        </p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

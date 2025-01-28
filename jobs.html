@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px auto;
+        }
+
+        .download-btn {
+            margin: 20px auto;
+        }
+
+        .download-btn a {
+            text-decoration: none;
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .download-btn a:hover {
+            background-color: #333;
+        }
+
+        .job-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .job {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .job img {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .job .details {
+            flex: 1;
+        }
+
+        .job .details .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .job .details .description {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .job {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .job img {
+                margin: 0 0 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="emblem.png" alt="Qarqana Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="national.html">National</a>
+            <a href="regional.html">Regional</a>
+            <a href="international.html">International</a>
+            <a href="departments.html">Departments</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </header>
+
+    <div class="main-title">Current Job Openings</div>
+
+    <div class="download-btn">
+        <a href="app.pdf" download>Download Application Form</a>
+    </div>
+
+    <div class="job-section">
+        <div class="job">
+            <img src="job1.jpg" alt="Job 1">
+            <div class="details">
+                <div class="title">Administrative Coordinator </div>
+                <div class="description">Manages schedules, correspondence, and departmental operations.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job2.jpg" alt="Job 2">
+            <div class="details">
+                <div class="title">Public Affairs Specialist </div>
+                <div class="description">Handles public relations, drafts statements, and communicates with stakeholders.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job3.jpg" alt="Job 3">
+            <div class="details">
+                <div class="title">Procurement Officer</div>
+                <div class="description">Oversees purchasing, vendor evaluation, and procurement compliance.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job4.jpg" alt="Job 4">
+            <div class="details">
+                <div class="title">Human Resources Assistant</div>
+                <div class="description">Assists in recruitment, employee records, and labor compliance.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job5.jpg" alt="Job 5">
+            <div class="details">
+                <div class="title">Data Entry Clerk</div>
+                <div class="description">Maintains records, updates databases, and organizes documents.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job6.jpg" alt="Job 6">
+            <div class="details">
+                <div class="title">Regulatory Compliance Analyst</div>
+                <div class="description">Ensures office procedures follow government regulations.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job7.jpg" alt="Job 7">
+            <div class="details">
+                <div class="title">Regulatory Compliance Analyst</div>
+                <div class="description">Description of job position 7 with details about requirements and responsibilities.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job8.jpg" alt="Job 8">
+            <div class="details">
+                <div class="title">Records Management Officer</div>
+                <div class="description">Oversees archiving and maintenance of official documents.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job9.jpg" alt="Job 9">
+            <div class="details">
+                <div class="title">Finance Assistant</div>
+                <div class="description">Supports budgeting, financial reporting, and invoice processing.</div>
+            </div>
+        </div>
+        <div class="job">
+            <img src="job10.jpg" alt="Job 10">
+            <div class="details">
+                <div class="title">Community Liaison Officer</div>
+                <div class="description">Connects government offices with the public, addressing concerns.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <img src="emblem.png" alt="Mini Logo">Sovereign Maritime Protectorate of Fairchuck | PO Box 45678 | Phone: +691-330-1234 | Fax: +691-330-5678 | Location: Weno, Fairchuck.
+        </p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country History</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #000;
+            margin: 40px auto;
+        }
+
+        .history-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .history-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .history-section .description {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .history-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .history-section img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Qarqana Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="national.html">National</a>
+            <a href="regional.html">Regional</a>
+            <a href="international.html">International</a>
+            <a href="departments.html">Departments</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </header>
+
+    <div class="main-title">Country History</div>
+
+    <div class="divider"></div>
+
+    <div class="history-section">
+        <img src="history1.jpg" alt="History 1">
+        <div class="description">
+            Qarqana’s history dates back centuries, with its origins rooted in maritime trade and cultural exchanges. The nation has been a vital link between civilizations, fostering connections and prosperity.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="history-section">
+        <img src="history2.jpg" alt="History 2">
+        <div class="description">
+            In the medieval era, Qarqana emerged as a key player in regional politics, known for its strong navy and vibrant cultural contributions to the world.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="history-section">
+        <img src="history3.jpg" alt="History 3">
+        <div class="description">
+            During the colonial period, Qarqana resisted external forces, maintaining its sovereignty and preserving its unique identity amidst a changing global landscape.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="history-section">
+        <img src="history4.jpg" alt="History 4">
+        <div class="description">
+            The 20th century saw Qarqana modernize its infrastructure, while still honoring its deep-rooted traditions, ensuring a balance between progress and heritage.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="history-section">
+        <img src="history5.jpg" alt="History 5">
+        <div class="description">
+            Today, Qarqana stands as a proud, independent nation, leading in maritime governance and sustainable development, while celebrating its rich history and culture.
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <img src="mini-logo.png" alt="Mini Logo"> Sovereign Maritime Protectorate of Qarqana | PO Box 12345 | Phone: +123-456-7890 | Fax: +123-456-7891 | Location: Qarqana City
+        </p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

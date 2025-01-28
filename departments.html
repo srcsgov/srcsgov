@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent News</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #000;
+            margin: 40px auto;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 20px auto;
+        }
+
+        .news-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .news-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .news-section .description {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        .video-section {
+            margin: 40px auto;
+            max-width: 800px;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .news-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .news-section img {
+                margin: 0 0 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="emblem.png" alt="Qarqana Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="national.html">National</a>
+            <a href="regional.html">History</a>
+            <a href="international.html">International</a>
+            <a href="departments.html">News</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </header>
+
+    <div class="main-title">Recent News</div>
+
+    <div class="divider"></div>
+
+    <div class="news-section">
+        <img src="news.png" alt="News">
+        <div class="description">
+           Farichuuk Island, January 28, 2025 – The residents of Farichuuk woke up to devastating scenes as heavy winds, reaching speeds of up to 120 km/h, swept across the island last night. The severe weather, part of an unexpected tropical disturbance, caused significant damage to homes, infrastructure, and vital resources, but local authorities have assured that recovery efforts are already in full swing.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="video-section">
+        <iframe src="https://www.youtube.com/embed/example" allowfullscreen></iframe>
+    </div>
+
+    <button style="
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #000;
+        background: none;
+        border: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    "
+    onmouseover="this.style.color='#333'; this.querySelector('span').style.width='100%';"
+    onmouseout="this.style.color='#000'; this.querySelector('span').style.width='0';"
+    >
+        Click Me
+        <span style="
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #000;
+            transition: width 0.3s ease;
+        "></span>
+    </button>
+
+
+    <footer>
+        <p>
+            <img src="emblem.png" alt="Mini Logo">Sovereign Maritime Protectorate of Fairchuck | PO Box 45678 | Phone: +691-330-1234 | Fax: +691-330-5678 | Location: Weno, Fairchuck.
+        </p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>

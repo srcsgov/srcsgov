@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Fairchuuk</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .divider {
+            width: 80%;
+            height: 2px;
+            background-color: #000;
+            margin: 40px auto;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 40px auto;
+        }
+
+        .content-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 40px auto;
+            max-width: 1200px;
+            text-align: left;
+        }
+
+        .content-section img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 10px;
+        }
+
+        .content-section .description {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 10px;
+        }
+
+        .text-section {
+            max-width: 800px;
+            margin: 40px auto;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+            padding: 0 10px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            color: #555;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer img {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .content-section {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 10px;
+            }
+
+            .content-section .description {
+                text-align: center;
+            }
+
+            .main-title {
+                font-size: 28px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-title {
+                font-size: 24px;
+            }
+
+            .content-section img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .content-section .description {
+                font-size: 16px;
+            }
+
+            .text-section {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="emblem.png" alt="Qarqana Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="national.html">National</a>
+            <a href="regional.html">History</a>
+            <a href="international.html">International</a>
+            <a href="departments.html">News</a>
+            <a href="jobs.html">Jobs</a>
+        </nav>
+    </header>
+
+    <div class="main-title">About the Sovereign Maritime Commonwealth of Fairchuuk</div>
+
+    <div class="divider"></div>
+
+    <div class="content-section">
+        <img src="map.png" alt="Photo">
+        <div class="description">
+           Fairchuck is a proud maritime nation steeped in a rich heritage of seafaring and cultural resilience. Strategically situated in the Pacific, it stands as a symbol of unity and independence, blending time-honored traditions with modern advancements. Committed to sustainability and global collaboration, Fairchuck navigates a future rooted in innovation, respect for its natural resources, and the enduring spirit of its people.
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="text-section">
+        With a focus on preserving its maritime heritage while embracing the future, Fairchuuk continues to lead in areas of maritime governance, environmental protection, and global collaboration. Its people take pride in their culture and their role as stewards of the sea.
+    </div>
+
+    <footer>
+        <p>
+            <img src="emblem.png" alt="Mini Logo">Sovereign Maritime Protectorate of Fairchuck | PO Box 45678 | Phone: +691-330-1234 | Fax: +691-330-5678 | Location: Weno, Fairchuck.
+        </p>
+        <p>Copyright &copy; 2025. All rights reserved.</p>
+    </footer>
+</body>
+</html>
